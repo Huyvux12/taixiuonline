@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tài Xỉu Cực Mặn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'shake': 'shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite',
+              'bounce-wild': 'bounce-wild 0.5s infinite',
+            },
+            keyframes: {
+              shake: {
+                '0%, 100%': { transform: 'translate3d(0, 0, 0)' },
+                '10%, 90%': { transform: 'translate3d(-4px, 0, 0)' },
+                '20%, 80%': { transform: 'translate3d(8px, 0, 0)' },
+                '30%, 50%, 70%': { transform: 'translate3d(-16px, 0, 0)' },
+                '40%, 60%': { transform: 'translate3d(16px, 0, 0)' }
+              },
+              'bounce-wild': {
+                 '0%, 100%': { transform: 'translateY(-25%) rotate(-10deg)' },
+                 '50%': { transform: 'translateY(0) rotate(10deg)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0f172a; /* Slate 900 */
+        color: #e2e8f0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
